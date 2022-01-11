@@ -113,6 +113,8 @@ footer div{
   height: auto;
 }
 footer div span{
+  border-left: 3px solid var(--purple);
+  padding-left: 3rem;
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
   color: var(--gray);
