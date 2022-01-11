@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sen:wght@400;700&display=swap');
+
+:root{
+  --purple: #6610F2;
+  --white: #f9f9f9;
+  --white-200: #eaeaea;
+  --gray: #2f2f2f;
+
+  --white-absolute: #ffffff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  border:0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  padding: 0 20vw;
+  background: var(--white);
+}
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4.2rem;
+}
+header span{
+  font-size: 3.2rem;
+  color: var(--gray);
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+}
+header div{
+  display: flex;
+  align-items: center;
+}
+header div button{
+  padding: 1rem;
+  margin-right: 4.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--white-200);
+  background: var(--white-absolute);
+}
+header div a{
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  border: 1px solid var(--white-200);
+  background: var(--white-absolute);
+
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+main{
+  width: auto;
+  height: auto;
+  margin: 16.8rem 0 29rem;
+  text-align: center;
+}
+main span{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+main h1{
+  font-family: 'Sen', sans-serif;
+  font-weight: bold;
+  font-size: 7.2rem;
+  margin: 3rem 0 8rem;
+}
+main .buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .buttons a{
+  padding: 1.5rem 3rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--gray);
+  border: 1px solid var(--white-200);
+  background: var(--white-absolute);
+  border-radius: 1rem;
+}
+main .buttons #makeEmoji{
+  background: var(--purple);
+  color: var(--white-absolute);
+}
+
+footer{
+  width: auto;
+  height: auto;
+  display: flex;
+  padding: 4rem;
+  justify-content: space-between;
+  background: var(--white-absolute);
+}
+footer div{
+  width: 45%;
+  height: auto;
+}
+footer div span{
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+footer div p{
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  color: var(--gray);
+  margin-top: 2.7rem;
+}
+
+.emoji{
+  position: absolute;
+  width: 20rem;
+  z-index: -1;
+}
+#emoji1{
+  top: 15rem;
+  left: 30rem;
+}
+#emoji2{
+  top: 45rem;
+  left: 35rem;
+}
+#emoji3{
+  top: 65rem;
+  left: 65rem;
+}
+#emoji4{
+  top: 45rem;
+  left: 115rem;
+}
+#emoji5{
+  top: 10rem;
+  left: 110rem;
+}
+
+@media (max-width: 1350px){
+  #emoji1{
+    top: 15rem;
+    left: 20rem;
+  }
+  #emoji2{
+    top: 45rem;
+    left: 25rem;
+  }
+  #emoji3{
+    top: 65rem;
+    left: 55rem;
+  }
+  #emoji4{
+    top: 45rem;
+    left: 95rem;
+  }
+  #emoji5{
+    top: 10rem;
+    left: 90rem;
+  }
+}
+
+@media (max-width: 1150px){
+  #emoji1{
+    top: 15rem;
+    left: 10rem;
+  }
+  #emoji2{
+    top: 45rem;
+    left: 15rem;
+  }
+  #emoji3{
+    top: 65rem;
+    left: 45rem;
+  }
+  #emoji4{
+    top: 45rem;
+    left: 85rem;
+  }
+  #emoji5{
+    top: 10rem;
+    left: 80rem;
+  }
+}
+
+@media (max-width: 1050px){
+  #emoji1{
+    top: 15rem;
+    left: 10rem;
+  }
+  #emoji2{
+    top: 45rem;
+    left: 15rem;
+  }
+  #emoji3{
+    top: 65rem;
+    left: 40rem;
+  }
+  #emoji4{
+    top: 45rem;
+    left: 75rem;
+  }
+  #emoji5{
+    top: 10rem;
+    left: 70rem;
+  }
+}
+@media (max-width: 950px){
+  #emoji1{
+    top: 15rem;
+    left: 5rem;
+  }
+  #emoji2{
+    top: 45rem;
+    left: 10rem;
+  }
+  #emoji3{
+    top: 65rem;
+    left: 35rem;
+  }
+  #emoji4{
+    top: 45rem;
+    left: 65rem;
+  }
+  #emoji5{
+    top: 10rem;
+    left: 60rem;
+  }
+}
+@media (max-width: 850px){
+  .emoji{
+    max-width: 20vw;
+  }
+  #emoji1{
+    top: 15rem;
+    left: 5rem;
+  }
+  #emoji2{
+    top: 45rem;
+    left: 10rem;
+  }
+  #emoji3{
+    top: 65rem;
+    left: 35rem;
+  }
+  #emoji4{
+    top: 45rem;
+    left: 65rem;
+  }
+  #emoji5{
+    top: 10rem;
+    left: 60rem;
+  }
+}
+
+@media (max-width: 800px){
+  header div button, header div img{
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+  #emoji1{
+    top: 15rem;
+    left: 5rem;
+  }
+  #emoji2{
+    top: 45rem;
+    left: 10rem;
+  }
+  #emoji3{
+    top: 65rem;
+    left: 35rem;
+  }
+  #emoji4{
+    top: 45rem;
+    left: 55rem;
+  }
+  #emoji5{
+    top: 10rem;
+    left: 50rem;
+  }
+  footer{
+    flex-direction: column;
+  }
+  footer div{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 700px){
+  main h1{
+    font-size: 5.2rem;
+  }
+  main .buttons a, header div a{
+    font-size: 1.4rem;
+    padding: 2rem;
+  } 
+  #emoji1{
+    top: 25rem;
+    left: 5rem;
+  }
+  #emoji2{
+    top: 55rem;
+    left: 10rem;
+  }
+  #emoji3{
+    top: 65rem;
+    left: 35rem;
+  }
+  #emoji4{
+    top: 45rem;
+    left: 45rem;
+  }
+  #emoji5{
+    top: 20rem;
+    left: 40rem;
+  }
+}
+
+@media (max-width: 600px){
+  header span{
+    font-size: 2.6rem;
+  }
+  main h1{
+    font-size: 3.2rem;
+  }
+  main .buttons a, header div a{
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  #emoji1{
+    top: 25rem;
+    left: 5rem;
+  }
+  #emoji2{
+    top: 55rem;
+    left: 10rem;
+  }
+  #emoji3{
+    top: 65rem;
+    left: 25rem;
+  }
+  #emoji4{
+    top: 45rem;
+    left: 35rem;
+  }
+  #emoji5{
+    top: 30rem;
+    left: 40rem;
+  }
+  footer{
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px){
+  body{
+    padding: 0 10vw;
+  }
+  header div a{
+    padding: 1rem;
+  }
+  #emoji1{
+    top: 25rem;
+    left: 5rem;
+  }
+  #emoji2{
+    top: 55rem;
+    left: 10rem;
+  }
+  #emoji3{
+    top: 65rem;
+    left: 25rem;
+  }
+  #emoji4{
+    top: 45rem;
+    left: 35rem;
+  }
+  #emoji5{
+    top: 30rem;
+    left: 30rem;
+  }
+  footer div span{
+    font-size: 1.5rem;
+  }
+  footer div p{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px){
+  header div a{
+    width: 0;
+    height: 0;
+    padding: 0;
+    position: absolute;
+    top: -60px;
+  }
+  main .buttons{
+    flex-direction: column;
+  }
+  main .buttons a{
+    margin-bottom: 2rem
+  }
+  #emoji1{
+    top: 15rem;
+    left: 5rem;
+  }
+  #emoji2{
+    top: 35rem;
+    left: 5rem;
+  }
+  #emoji3{
+    top: 40rem;
+    left: 25rem;
+  }
+  #emoji4{
+    top: 25rem;
+    left: 30rem;
+  }
+  #emoji5{
+    top: 10rem;
+    left: 30rem;
+  }
+}
+
+@media (max-width: 400px){
+  main h1{
+    font-size: 2.2rem;
+  }
+}
